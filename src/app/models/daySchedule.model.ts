@@ -1,6 +1,6 @@
-export class DaySchedule{
-    constructor(
+export class DaySchedule {
+    constructor (
         public morningLiter: number,
         public eveningLiter: number
-    ){}
-    }
+    ) { }
+}
