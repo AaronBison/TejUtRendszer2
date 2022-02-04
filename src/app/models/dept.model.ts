@@ -7,7 +7,7 @@ export class Dept {
 
 }
 
-enum deptStatusEnum {
-    Settled = 1,
-    Unsettled = 0
+export enum deptStatusEnum {
+    SETTLED = 1,
+    UNSETTLED = 0
 }

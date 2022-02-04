@@ -1,3 +1,4 @@
+import { CURRENT_TIME } from '../utils/constants';
 import { DaySchedule } from './daySchedule.model';
 
 export class Station {
@@ -9,11 +10,10 @@ export class Station {
 
 
     get customerLiterToday() {
-        const currentTime = new Date();
 
         const midday = new Date()
         midday.setHours(12);
 
-        return currentTime.getHours() < midday.getHours() ? this.customerScheduleToday.morningLiter : this.customerScheduleToday.eveningLiter
+        return CURRENT_TIME.getHours() < midday.getHours() ? this.customerScheduleToday.morningLiter : this.customerScheduleToday.eveningLiter
     }
 }

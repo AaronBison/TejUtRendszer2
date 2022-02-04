@@ -55,7 +55,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Csóka": [
         null,
@@ -113,7 +115,9 @@
         null,
         null,
         null,
-        2
+        2,
+        16,
+        56
     ],
     "Karcsi": [
         null,
@@ -171,7 +175,9 @@
         null,
         null,
         null,
-        4
+        4,
+        40,
+        140
     ],
     "Szőcs": [
         null,
@@ -229,7 +235,9 @@
         null,
         null,
         null,
-        null
+        null,
+        0,
+        0
     ],
     "Bence Attila": [
         2,
@@ -287,7 +295,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Orosz mama": [
         null,
@@ -345,7 +355,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Molnár": [
         null,
@@ -403,7 +415,9 @@
         null,
         null,
         null,
-        null
+        null,
+        24,
+        84
     ],
     "Nóra": [
         2,
@@ -461,7 +475,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "5/A/15": [
         null,
@@ -519,7 +535,9 @@
         null,
         null,
         null,
-        null
+        null,
+        40,
+        140
     ],
     "Benedek Árpi": [
         2,
@@ -577,7 +595,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Antal": [
         2,
@@ -635,7 +655,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Szatmáriné": [
         2,
@@ -693,7 +715,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "10 es": [
         2,
@@ -751,7 +775,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Dezső": [
         2.5,
@@ -809,7 +835,9 @@
         null,
         null,
         null,
-        null
+        null,
+        20,
+        70
     ],
     "Adél 2": [
         1,
@@ -867,7 +895,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Adél": [
         2,
@@ -925,7 +955,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Balázs Anna": [
         null,
@@ -983,7 +1015,9 @@
         null,
         null,
         null,
-        2
+        2,
+        32,
+        112
     ],
     "Gyilkos tó 44": [
         null,
@@ -1041,7 +1075,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Amálka": [
         null,
@@ -1099,7 +1135,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Tusa": [
         2,
@@ -1157,7 +1195,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Papuc": [
         null,
@@ -1215,7 +1255,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Eperjesi": [
         2,
@@ -1273,7 +1315,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Izsó": [
         2,
@@ -1331,7 +1375,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Orosz": [
         null,
@@ -1389,7 +1435,9 @@
         null,
         null,
         null,
-        2
+        2,
+        8,
+        28
     ],
     "Balcescu 64": [
         null,
@@ -1447,7 +1495,9 @@
         null,
         null,
         null,
-        2
+        2,
+        8,
+        28
     ],
     "Palibá": [
         null,
@@ -1505,7 +1555,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Ági néni": [
         2,
@@ -1563,7 +1615,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Székelyék": [
         null,
@@ -1621,7 +1675,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Jucus": [
         null,
@@ -1679,7 +1735,9 @@
         null,
         null,
         null,
-        2
+        2,
+        16,
+        56
     ],
     "Makkos": [
         null,
@@ -1737,7 +1795,9 @@
         null,
         null,
         null,
-        2
+        2,
+        24,
+        84
     ],
     "Luka": [
         2,
@@ -1795,7 +1855,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Szőcs Nándi": [
         2,
@@ -1853,7 +1915,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "91 es": [
         null,
@@ -1911,7 +1975,9 @@
         null,
         null,
         null,
-        2
+        2,
+        24,
+        84
     ],
     "Piroska": [
         null,
@@ -1969,7 +2035,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "madaras csaba": [
         null,
@@ -2027,7 +2095,9 @@
         null,
         null,
         null,
-        null
+        null,
+        0,
+        0
     ],
     "krisztián": [
         null,
@@ -2085,7 +2155,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "7/37": [
         null,
@@ -2143,7 +2215,9 @@
         null,
         null,
         null,
-        2
+        2,
+        28,
+        98
     ],
     "Pál Tünde": [
         null,
@@ -2201,7 +2275,9 @@
         null,
         null,
         null,
-        2
+        2,
+        16,
+        56
     ],
     "Bajkó Tibor": [
         null,
@@ -2259,7 +2335,9 @@
         null,
         null,
         null,
-        null
+        null,
+        4,
+        14
     ],
     "Eszter": [
         null,
@@ -2317,7 +2395,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Kémenes": [
         null,
@@ -2375,7 +2455,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Rendőr": [
         null,
@@ -2433,7 +2515,9 @@
         null,
         null,
         null,
-        2
+        2,
+        32,
+        112
     ],
     "20/B/23": [
         null,
@@ -2491,7 +2575,9 @@
         null,
         null,
         null,
-        2.5
+        2.5,
+        30,
+        105
     ],
     "Timár M": [
         2,
@@ -2549,7 +2635,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Balázs Judith": [
         4,
@@ -2607,7 +2695,9 @@
         null,
         null,
         null,
-        2
+        2,
+        52,
+        182
     ],
     "Magyari István": [
         null,
@@ -2665,7 +2755,9 @@
         null,
         null,
         null,
-        2
+        2,
+        24,
+        84
     ],
     "és szomszédja": [
         null,
@@ -2723,7 +2815,9 @@
         null,
         null,
         null,
-        2
+        2,
+        24,
+        84
     ],
     "SZOMSZÉD": [
         null,
@@ -2781,7 +2875,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Balázsné": [
         2,
@@ -2839,7 +2935,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Mátyás": [
         null,
@@ -2897,7 +2995,9 @@
         null,
         null,
         null,
-        null
+        null,
+        40,
+        140
     ],
     "György Judith": [
         2,
@@ -2955,7 +3055,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Vadász": [
         null,
@@ -3013,7 +3115,9 @@
         null,
         null,
         null,
-        3
+        3,
+        24,
+        84
     ],
     "Harangozó": [
         null,
@@ -3071,7 +3175,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Kinda": [
         null,
@@ -3129,7 +3235,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Lakatos": [
         null,
@@ -3187,7 +3295,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Kati": [
         null,
@@ -3245,7 +3355,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Katiék": [
         null,
@@ -3303,7 +3415,9 @@
         null,
         null,
         null,
-        null
+        null,
+        16,
+        56
     ],
     "Kis Dezső": [
         null,
@@ -3361,7 +3475,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "IMG": [
         null,
@@ -3419,7 +3535,9 @@
         null,
         null,
         null,
-        null
+        null,
+        8,
+        28
     ],
     "Mü": [
         null,
@@ -3477,7 +3595,9 @@
         null,
         null,
         null,
-        4
+        4,
+        88,
+        308
     ],
     "Összeg": [
         39.5,
@@ -3535,6 +3655,8 @@
         null,
         0,
         null,
-        39.5
+        39.5,
+        1054,
+        3689
     ]
 }

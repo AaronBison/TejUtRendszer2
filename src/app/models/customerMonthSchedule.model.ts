@@ -1,10 +1,10 @@
 import { DaySchedule } from "./daySchedule.model";
 import { Dept } from './dept.model';
 
-export class Customer {
+export class CustomerMonthSchedule {
     constructor (
         public customerName: string,
         public customerDailyLiter: DaySchedule[],
-        public customerMonthlyDebt: Dept[]
+        public customerMonthlyDebt: Dept
     ) { }
 }
