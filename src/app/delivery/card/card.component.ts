@@ -8,7 +8,6 @@ import { DeliveryService } from '../delivery.sercive';
   templateUrl: './card.component.html',
 })
 export class CardComponent {
-  constructor (private deliveryService: DeliveryService) { }
 
   @Input() station!: Station;
 

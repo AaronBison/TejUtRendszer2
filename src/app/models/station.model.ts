@@ -4,8 +4,7 @@ export class Station {
     constructor (
         public customerName: string,
         public customerDebt: number,
-        private customerScheduleToday: DaySchedule,
-        private _customerLiterToday?: number,
+        private customerScheduleToday: DaySchedule
     ) { }
 
 
