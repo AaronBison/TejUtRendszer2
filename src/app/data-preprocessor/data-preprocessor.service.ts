@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import * as sourceJson from './source.json';
 import { CustomerMonthSchedule } from '../models/customerMonthSchedule.model';
 import { DaySchedule } from '../models/daySchedule.model';
-import { Debt, debtStatusEnum } from '../models/debt.model';
+import { Debt, DebtStatus } from '../models/debt.model';
 
 @Injectable({ providedIn: 'root' })
 export class DataPreprocessor {
@@ -38,7 +38,7 @@ export class DataPreprocessor {
             }
 
             const customerDeptValue = sourceCustomer[1][customerLiterList.length - 1] as number;
-            const customerDept: Debt = new Debt(customerDeptValue, debtStatusEnum.UNSETTLED);
+            const customerDept: Debt = new Debt(customerDeptValue, DebtStatus.UNSETTLED);
 
             let customerMonthSchedule = new CustomerMonthSchedule(sourceCustomer[0], dayScheduleList, customerDept);
             this.addCustomer(customerMonthSchedule);

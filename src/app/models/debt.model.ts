@@ -1,13 +1,13 @@
 export class Debt {
     constructor (
         public debtValue?: number,
-        public debtStatus?: debtStatusEnum,
+        public debtStatus?: DebtStatus,
     ) { }
 
 
 }
 
-export enum debtStatusEnum {
+export enum DebtStatus {
     SETTLED = 1,
     UNSETTLED = 0
 }

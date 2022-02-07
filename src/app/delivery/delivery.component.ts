@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DataPreprocessor } from '../data-preprocessor/data-preprocessor.service';
-import { Station } from '../models/station.model';
+import { CustomerMonthSchedule } from '../models/customerMonthSchedule.model';
 import { CURRENT_TIME, SCHEDULE_SEPARATOR_HOUR } from '../utils/constants';
 import { DeliveryService } from './delivery.sercive';
 
@@ -10,9 +9,9 @@ import { DeliveryService } from './delivery.sercive';
     templateUrl: './delivery.component.html'
 })
 export class DeliveryComponent implements OnInit {
-    constructor (private deliveryService: DeliveryService, private dataPreprocessor: DataPreprocessor) { }
+    constructor (private deliveryService: DeliveryService) { }
 
-    stations: Station[] = [];
+    stations: CustomerMonthSchedule[] = [];
     title: string = '';
 
 

@@ -1,27 +1,38 @@
 import { Injectable } from '@angular/core';
-import { DataPreprocessor } from '../data-preprocessor/data-preprocessor.service';
 
-import { Station } from '../models/station.model';
+import { DataPreprocessor } from '../data-preprocessor/data-preprocessor.service';
+import { CustomerMonthSchedule } from '../models/customerMonthSchedule.model';
 
 @Injectable({ providedIn: 'root' })
 export class DeliveryService {
     constructor (private dataPreprocessor: DataPreprocessor) {
-        this.initializeStations();
+        this._stations = this.dataPreprocessor.customerMonthScheduleList;
     }
 
-    private _stations: Station[] = [];
+    private _stations: CustomerMonthSchedule[] = [];
 
     get stations() {
         return this._stations;
     }
 
-    initializeStations() {
-        const customerMonthScheduleList = this.dataPreprocessor.customerMonthScheduleList
-        customerMonthScheduleList.forEach(customerMonthSchedule => {
-            const station: Station = new Station(customerMonthSchedule.customerName, customerMonthSchedule.customerMonthlyDebt, customerMonthSchedule.customerDailyLiter)
+    getRelevantStations() {
+        const stations: CustomerMonthSchedule[] = []
+
+        this._stations.forEach(station => {
             if (station.customerLiterToday !== 0) {
-                this._stations.push(station);
+                stations.push(station);
             }
         });
+        return stations;
     }
+
+    // initializeStations() {
+    //     const customerMonthScheduleList = this.dataPreprocessor.customerMonthScheduleList
+    //     customerMonthScheduleList.forEach(customerMonthSchedule => {
+    //         const station: Station = new Station(customerMonthSchedule.customerName, customerMonthSchedule.customerMonthlyDebt, customerMonthSchedule.customerScheduleThisMonth)
+    //         if (station.customerLiterToday !== 0) {
+    //             this._stations.push(station);
+    //         }
+    //     });
+    // }
 }

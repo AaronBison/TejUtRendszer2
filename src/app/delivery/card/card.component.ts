@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-import { Station } from 'src/app/models/station.model';
+import { CustomerMonthSchedule } from 'src/app/models/customerMonthSchedule.model';
 
 @Component({
   selector: 'app-card',
@@ -8,6 +8,6 @@ import { Station } from 'src/app/models/station.model';
 })
 export class CardComponent {
 
-  @Input() station!: Station;
+  @Input() station!: CustomerMonthSchedule;
 
 }
