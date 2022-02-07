@@ -3,23 +3,26 @@ import { Injectable } from '@angular/core';
 import * as sourceJson from './source.json';
 import { CustomerMonthSchedule } from '../models/customerMonthSchedule.model';
 import { DaySchedule } from '../models/daySchedule.model';
-import { Dept, deptStatusEnum } from '../models/dept.model';
+import { Debt, debtStatusEnum } from '../models/debt.model';
 
 @Injectable({ providedIn: 'root' })
 export class DataPreprocessor {
-
-    private _customerList: CustomerMonthSchedule[] = [];
-
-    set customerList(customerList: CustomerMonthSchedule[]) {
-        this._customerList = customerList;
+    constructor () {
+        this.parseSourceToCustomerMonthPlan();
     }
 
-    addCustomer(customer: CustomerMonthSchedule) {
-        this._customerList.push(customer);
+    private _customerMonthScheduleList: CustomerMonthSchedule[] = [];
+
+    set customerMonthScheduleList(customerList: CustomerMonthSchedule[]) {
+        this._customerMonthScheduleList = customerList;
     }
 
-    get customerList(): CustomerMonthSchedule[] {
-        return this._customerList;
+    addCustomer(customerMonthSchedule: CustomerMonthSchedule) {
+        this._customerMonthScheduleList.push(customerMonthSchedule);
+    }
+
+    get customerMonthScheduleList(): CustomerMonthSchedule[] {
+        return this._customerMonthScheduleList;
     }
 
 
@@ -33,15 +36,13 @@ export class DataPreprocessor {
                 const eveningLiter = sourceCustomer[1][i + 1] === null ? 0 : sourceCustomer[1][i + 1] as number;
                 dayScheduleList.push(new DaySchedule(morningLiter, eveningLiter));
             }
-            console.log(sourceCustomer[1][customerLiterList.length - 1]);
 
             const customerDeptValue = sourceCustomer[1][customerLiterList.length - 1] as number;
-            const customerDept: Dept = new Dept(customerDeptValue, deptStatusEnum.UNSETTLED);
+            const customerDept: Debt = new Debt(customerDeptValue, debtStatusEnum.UNSETTLED);
 
-            let customer = new CustomerMonthSchedule(sourceCustomer[0], dayScheduleList, customerDept);
-            this.addCustomer(customer);
+            let customerMonthSchedule = new CustomerMonthSchedule(sourceCustomer[0], dayScheduleList, customerDept);
+            this.addCustomer(customerMonthSchedule);
         });
-        console.log(this.customerList);
-
+        this._customerMonthScheduleList.pop();
     }
 }

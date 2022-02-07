@@ -1,21 +1,27 @@
 import { Injectable } from '@angular/core';
-import { DaySchedule } from '../models/daySchedule.model';
+import { DataPreprocessor } from '../data-preprocessor/data-preprocessor.service';
 
 import { Station } from '../models/station.model';
 
 @Injectable({ providedIn: 'root' })
 export class DeliveryService {
+    constructor (private dataPreprocessor: DataPreprocessor) {
+        this.initializeStations();
+    }
 
-    private _stations: Station[] = [
-        new Station('Csóka', 56, { morningLiter: 0, eveningLiter: 2 }),
-        new Station('Karcsi', 140, { morningLiter: 0, eveningLiter: 4 }),
-        new Station('Bence Attila', 64, { morningLiter: 2, eveningLiter: 0 }),
-        new Station('5/A/15', 140, { morningLiter: 0, eveningLiter: 5 }),
-        new Station('Dezső', 70, { morningLiter: 2.5, eveningLiter: 0 }),
-        new Station('Balázs Anna', 112, { morningLiter: 4, eveningLiter: 0 }),
-    ];
+    private _stations: Station[] = [];
 
     get stations() {
         return this._stations;
+    }
+
+    initializeStations() {
+        const customerMonthScheduleList = this.dataPreprocessor.customerMonthScheduleList
+        customerMonthScheduleList.forEach(customerMonthSchedule => {
+            const station: Station = new Station(customerMonthSchedule.customerName, customerMonthSchedule.customerMonthlyDebt, customerMonthSchedule.customerDailyLiter)
+            if (station.customerLiterToday !== 0) {
+                this._stations.push(station);
+            }
+        });
     }
 }
