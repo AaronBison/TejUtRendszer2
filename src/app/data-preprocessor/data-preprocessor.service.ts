@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 import * as sourceJson from './source.json';
 import { CustomerMonthSchedule } from '../models/customerMonthSchedule.model';
 import { DaySchedule } from '../models/daySchedule.model';
-import { Debt, DebtStatus } from '../models/debt.model';
+import { Debt } from '../models/debt.model';
+import { DebtStatus } from '../utils/enums';
 
 @Injectable({ providedIn: 'root' })
 export class DataPreprocessor {
