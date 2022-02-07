@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/delivery', pathMatch: 'full' },
   { path: 'delivery', component: DeliveryComponent },
   { path: 'summary', component: SummaryComponent },
+  { path: '**', redirectTo: '/delivery' }
 
 ];
 
