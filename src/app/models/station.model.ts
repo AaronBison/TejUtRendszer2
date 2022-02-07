@@ -17,10 +17,6 @@ export class Station {
 
         const TODAY = CURRENT_TIME.getDate() - 1;
 
-        console.log(TODAY);
-        console.log(this.customerScheduleThisMonth[TODAY]);
-
-
         return CURRENT_TIME.getHours() < midday.getHours() ? this.customerScheduleThisMonth[TODAY].morningLiter : this.customerScheduleThisMonth[TODAY].eveningLiter
     }
 }
