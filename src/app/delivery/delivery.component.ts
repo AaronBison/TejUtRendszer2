@@ -16,7 +16,7 @@ export class DeliveryComponent implements OnInit {
 
 
     ngOnInit(): void {
-        this.stations = this.deliveryService.stations;
+        this.stations = this.deliveryService.getRelevantStations();
         this.isAfternoonCheck();
     }
 

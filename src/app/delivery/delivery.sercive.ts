@@ -25,14 +25,4 @@ export class DeliveryService {
         });
         return stations;
     }
-
-    // initializeStations() {
-    //     const customerMonthScheduleList = this.dataPreprocessor.customerMonthScheduleList
-    //     customerMonthScheduleList.forEach(customerMonthSchedule => {
-    //         const station: Station = new Station(customerMonthSchedule.customerName, customerMonthSchedule.customerMonthlyDebt, customerMonthSchedule.customerScheduleThisMonth)
-    //         if (station.customerLiterToday !== 0) {
-    //             this._stations.push(station);
-    //         }
-    //     });
-    // }
 }
